@@ -35,7 +35,7 @@ const ChatBot = () => {
   //   "You've touched on something important there. In my experience... 🎯"
   // ];
   const getAIResponse = async (input) => {
-          const response = await axios.post('http://localhost:5000/api/chat/generate', { input });
+          const response = await axios.post('https://ai-assistant-rk1v.onrender.com/api/chat/generate', { input });
           console.log('AI Response:', response.data);
           const responses = response.data;
           // console.log('AI Responses:', responses);
